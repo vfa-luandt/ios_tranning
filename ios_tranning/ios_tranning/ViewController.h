@@ -9,6 +9,7 @@
 
 @interface ViewController : UIViewController
 
+@property UIAlertController *showOutAlert;
 
 @end
 

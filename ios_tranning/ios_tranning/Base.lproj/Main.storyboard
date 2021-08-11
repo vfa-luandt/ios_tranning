@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kie-Is-4QD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-LC-l9d">
+                                <rect key="frame" x="20" y="108" width="374" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voZ-GO-ZHV">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bmN-Lg-09Y"/>
+                                        </constraints>
+                                        <state key="normal" title="UIAlertView/UISwitch"/>
+                                        <connections>
+                                            <action selector="buttonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIL-nh-qUX"/>
+                                            <segue destination="sec-iO-FOw" kind="push" identifier="alertViewSegue" id="14R-0W-6YH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-BP-dp0">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Mhm-sx-IxJ"/>
+                                        </constraints>
+                                        <state key="normal" title="UIPickerView "/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2t-t7-ugY">
+                                        <rect key="frame" x="0.0" y="100" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rc8-We-Q3K"/>
+                                        </constraints>
+                                        <state key="normal" title="UIDatePicker "/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkR-kz-zHb">
+                                        <rect key="frame" x="0.0" y="150" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qP8-3T-uqa"/>
+                                        </constraints>
+                                        <state key="normal" title="UISlider "/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPI-Q8-qtu">
+                                        <rect key="frame" x="0.0" y="200" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="XoW-Jj-hOZ"/>
+                                        </constraints>
+                                        <state key="normal" title="UISegmentedControl "/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="O8a-LC-l9d" secondAttribute="bottom" constant="20" id="6v5-hL-aKg"/>
+                            <constraint firstItem="O8a-LC-l9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CYd-IS-k8r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8a-LC-l9d" secondAttribute="trailing" constant="20" id="c3j-fq-BEb"/>
+                            <constraint firstItem="O8a-LC-l9d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zH3-xk-4bY"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="V2S-Fs-3xy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="83.705357142857139"/>
+        </scene>
+        <!--Switch View Controller-->
+        <scene sceneID="VE5-m5-RjX">
+            <objects>
+                <viewController id="I2o-fZ-mBH" customClass="UISwitchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUN-wf-Y7j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-90-kDk">
+                                <rect key="frame" x="133" y="182" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aLd-Ta-7gT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AZj-ap-dFn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wz1-lN-ZwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="765"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="tNL-cY-AXL">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="sec-iO-FOw" customClass="AlertViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Txd-uP-On5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m6S-hv-2bt">
+                                <rect key="frame" x="20" y="108" width="374" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0p-ba-7Vp">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="AvP-Ih-pd7"/>
+                                        </constraints>
+                                        <state key="normal" title="UIAlert two action"/>
+                                        <connections>
+                                            <action selector="buttonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5l-cx-B3g"/>
+                                            <action selector="buttonAlertTwoAction:" destination="sec-iO-FOw" eventType="touchUpInside" id="5FE-kX-FqE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTP-Xy-zc9">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="odE-Xe-nyT"/>
+                                        </constraints>
+                                        <state key="normal" title="UIAlertView"/>
+                                        <connections>
+                                            <action selector="buttonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUI-GI-fQA"/>
+                                            <action selector="buttonAlertAction:" destination="sec-iO-FOw" eventType="touchUpInside" id="aJs-BE-koH"/>
+                                            <action selector="buttonAlertTwoAction:" destination="sec-iO-FOw" eventType="touchUpInside" id="EEq-qu-Swh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWp-2Q-EO2">
+                                <rect key="frame" x="20" y="278" width="374" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIg-qU-70v">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="do0-eD-oyF">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="tV1-GO-DSS"/>
+                                        </constraints>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GSi-mp-a1N"/>
+                                    <constraint firstItem="lIg-qU-70v" firstAttribute="top" secondItem="yWp-2Q-EO2" secondAttribute="top" id="Htj-cn-sOk"/>
+                                    <constraint firstItem="do0-eD-oyF" firstAttribute="top" secondItem="lIg-qU-70v" secondAttribute="bottom" constant="10" id="KdR-hG-XaX"/>
+                                    <constraint firstAttribute="bottom" secondItem="do0-eD-oyF" secondAttribute="bottom" id="cuy-xa-ybZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="do0-eD-oyF" secondAttribute="trailing" id="eHm-iv-Nzh"/>
+                                    <constraint firstItem="lIg-qU-70v" firstAttribute="leading" secondItem="yWp-2Q-EO2" secondAttribute="leading" constant="20" id="syI-EK-qK4"/>
+                                    <constraint firstAttribute="trailing" secondItem="lIg-qU-70v" secondAttribute="trailing" constant="20" id="uVb-7a-aeH"/>
+                                    <constraint firstItem="do0-eD-oyF" firstAttribute="leading" secondItem="yWp-2Q-EO2" secondAttribute="leading" id="uzT-Vx-8Nc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGv-BR-Kvn">
+                                <rect key="frame" x="20" y="208" width="374" height="50"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3r6-HN-dXt">
+                                        <rect key="frame" x="20" y="9.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchItem:" destination="sec-iO-FOw" eventType="valueChanged" id="jMy-cJ-IhC"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1PE-uL-oLd"/>
+                                    <constraint firstItem="3r6-HN-dXt" firstAttribute="leading" secondItem="DGv-BR-Kvn" secondAttribute="leading" constant="20" id="cNq-uz-JAj"/>
+                                    <constraint firstItem="3r6-HN-dXt" firstAttribute="centerY" secondItem="DGv-BR-Kvn" secondAttribute="centerY" id="t94-X2-0Hg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gra-S4-l0k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m6S-hv-2bt" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="2Q5-us-enI"/>
+                            <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="m6S-hv-2bt" secondAttribute="trailing" constant="20" id="7Pw-qK-zJ4"/>
+                            <constraint firstItem="DGv-BR-Kvn" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="9yW-gK-fQ8"/>
+                            <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="DGv-BR-Kvn" secondAttribute="trailing" constant="20" id="Nbk-fU-P7n"/>
+                            <constraint firstItem="yWp-2Q-EO2" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="XbV-gS-Uge"/>
+                            <constraint firstItem="gra-S4-l0k" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m6S-hv-2bt" secondAttribute="bottom" constant="20" id="YcR-z6-TwR"/>
+                            <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="yWp-2Q-EO2" secondAttribute="trailing" constant="20" id="a0H-rD-5bK"/>
+                            <constraint firstItem="yWp-2Q-EO2" firstAttribute="top" secondItem="DGv-BR-Kvn" secondAttribute="bottom" constant="20" id="b3S-Jr-Xj3"/>
+                            <constraint firstItem="m6S-hv-2bt" firstAttribute="top" secondItem="gra-S4-l0k" secondAttribute="top" constant="20" id="gm7-Ed-BOD"/>
+                            <constraint firstItem="DGv-BR-Kvn" firstAttribute="top" secondItem="m6S-hv-2bt" secondAttribute="bottom" constant="20" id="haZ-w3-ykd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zai-9O-WB7"/>
+                    <connections>
+                        <outlet property="datePicker" destination="do0-eD-oyF" id="OW2-3k-muf"/>
+                        <outlet property="titleDatePicker" destination="lIg-qU-70v" id="5Vk-8X-4rJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfb-0c-Nyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.7391304347827" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K5X-of-aBj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kie-Is-4QD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u30-hP-f2K">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FaE-8O-OPE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qun-G9-H7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

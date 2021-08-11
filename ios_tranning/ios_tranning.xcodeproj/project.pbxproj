@@ -17,6 +17,8 @@
 		C3B38D6C26C38FF90091B031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D6B26C38FF90091B031 /* main.m */; };
 		C3B38D7626C38FF90091B031 /* ios_tranningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D7526C38FF90091B031 /* ios_tranningTests.m */; };
 		C3B38D8126C38FF90091B031 /* ios_tranningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D8026C38FF90091B031 /* ios_tranningUITests.m */; };
+		C3B38D9C26C3B2810091B031 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D9A26C3B2810091B031 /* AlertViewController.m */; };
+		C3B38DAB26C3D4C50091B031 /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38DA926C3D4C50091B031 /* UISwitchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		C3B38D7C26C38FF90091B031 /* ios_tranningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_tranningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B38D8026C38FF90091B031 /* ios_tranningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_tranningUITests.m; sourceTree = "<group>"; };
 		C3B38D8226C38FF90091B031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B38D9926C3B2810091B031 /* AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		C3B38D9A26C3B2810091B031 /* AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		C3B38DA826C3D4C50091B031 /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
+		C3B38DA926C3D4C50091B031 /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		C3B38D5526C38FF20091B031 /* ios_tranning */ = {
 			isa = PBXGroup;
 			children = (
+				C3B38D9126C3AE3D0091B031 /* Screen */,
 				C3B38D5626C38FF20091B031 /* AppDelegate.h */,
 				C3B38D5726C38FF20091B031 /* AppDelegate.m */,
 				C3B38D5926C38FF20091B031 /* SceneDelegate.h */,
@@ -138,6 +145,33 @@
 				C3B38D8226C38FF90091B031 /* Info.plist */,
 			);
 			path = ios_tranningUITests;
+			sourceTree = "<group>";
+		};
+		C3B38D9126C3AE3D0091B031 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C3B38DA726C3D4A10091B031 /* UISwitch  */,
+				C3B38D9526C3AF170091B031 /* AlertView */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C3B38D9526C3AF170091B031 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C3B38D9926C3B2810091B031 /* AlertViewController.h */,
+				C3B38D9A26C3B2810091B031 /* AlertViewController.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		C3B38DA726C3D4A10091B031 /* UISwitch  */ = {
+			isa = PBXGroup;
+			children = (
+				C3B38DA826C3D4C50091B031 /* UISwitchViewController.h */,
+				C3B38DA926C3D4C50091B031 /* UISwitchViewController.m */,
+			);
+			path = "UISwitch ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +307,9 @@
 				C3B38D6426C38FF20091B031 /* ios_tranning.xcdatamodeld in Sources */,
 				C3B38D5E26C38FF20091B031 /* ViewController.m in Sources */,
 				C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */,
+				C3B38DAB26C3D4C50091B031 /* UISwitchViewController.m in Sources */,
 				C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */,
+				C3B38D9C26C3B2810091B031 /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
