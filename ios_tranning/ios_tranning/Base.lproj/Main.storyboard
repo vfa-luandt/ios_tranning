@@ -73,15 +73,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-90-kDk">
-                                <rect key="frame" x="133" y="182" width="49" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxI-kn-9Qa">
+                                <rect key="frame" x="20" y="148" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tMT-W3-ZGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-eH-iL7">
+                                <rect key="frame" x="18" y="108" width="378" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sEz-oR-4hk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="actionSlider:" destination="I2o-fZ-mBH" eventType="valueChanged" id="Yml-ZW-K9I"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-8S-tIz">
+                                <rect key="frame" x="97" y="223" width="131" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aLd-Ta-7gT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CxI-kn-9Qa" firstAttribute="top" secondItem="X2l-eH-iL7" secondAttribute="bottom" constant="10" id="JZM-Mg-I11"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="CxI-kn-9Qa" secondAttribute="trailing" constant="20" id="SqZ-R6-bay"/>
+                            <constraint firstItem="X2l-eH-iL7" firstAttribute="top" secondItem="aLd-Ta-7gT" secondAttribute="top" constant="20" id="YWA-Sl-Xfq"/>
+                            <constraint firstItem="CxI-kn-9Qa" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="bC2-YM-uRb"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="X2l-eH-iL7" secondAttribute="trailing" constant="20" id="bRJ-6p-ub0"/>
+                            <constraint firstItem="X2l-eH-iL7" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="pCV-du-mih"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AZj-ap-dFn"/>
+                    <connections>
+                        <outlet property="labelItemSlider" destination="CxI-kn-9Qa" id="Dth-qJ-Oxn"/>
+                        <outlet property="sliderItem" destination="X2l-eH-iL7" id="kI0-WG-1lh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wz1-lN-ZwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

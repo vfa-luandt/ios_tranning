@@ -13,9 +13,20 @@
 
 @implementation UiSliderViewController
 
+- (IBAction)actionSlider:(id)sender {
+  int rounded = _sliderItem.value;  //Casting to an int will truncate, round down
+      [sender setValue:rounded animated:NO];
+  _labelItemSlider.text = @(_sliderItem.value).stringValue;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+  _sliderItem.maximumValue = 100.0;
+  _sliderItem.minimumValue = 0.0;
+  _sliderItem.value = 50.0;
+  _sliderItem.continuous = NO;
+  _labelItemSlider.text = @(_sliderItem.value).stringValue;
 }
 
 /*
