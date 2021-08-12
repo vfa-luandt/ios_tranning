@@ -179,6 +179,34 @@
                                     <constraint firstItem="3r6-HN-dXt" firstAttribute="centerY" secondItem="DGv-BR-Kvn" secondAttribute="centerY" id="t94-X2-0Hg"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSh-Tr-ur6">
+                                <rect key="frame" x="20" y="498" width="374" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFS-6c-Wk5">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Nx7-om-L7q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIY-F3-f2t">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="105"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yIY-F3-f2t" secondAttribute="bottom" id="5R8-Zb-Py5"/>
+                                    <constraint firstItem="yIY-F3-f2t" firstAttribute="top" secondItem="WFS-6c-Wk5" secondAttribute="bottom" constant="20" id="8f7-1C-53P"/>
+                                    <constraint firstAttribute="height" constant="150" id="EjO-Ef-PkI"/>
+                                    <constraint firstItem="WFS-6c-Wk5" firstAttribute="leading" secondItem="kSh-Tr-ur6" secondAttribute="leading" constant="20" id="ceW-C0-rde"/>
+                                    <constraint firstItem="WFS-6c-Wk5" firstAttribute="top" secondItem="kSh-Tr-ur6" secondAttribute="top" id="co0-Ye-q78"/>
+                                    <constraint firstAttribute="trailing" secondItem="yIY-F3-f2t" secondAttribute="trailing" id="mJU-kp-yJQ"/>
+                                    <constraint firstItem="yIY-F3-f2t" firstAttribute="leading" secondItem="kSh-Tr-ur6" secondAttribute="leading" id="sSe-Nx-Sau"/>
+                                    <constraint firstAttribute="trailing" secondItem="WFS-6c-Wk5" secondAttribute="trailing" constant="20" id="y1V-TS-Cut"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gra-S4-l0k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -186,19 +214,24 @@
                             <constraint firstItem="m6S-hv-2bt" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="2Q5-us-enI"/>
                             <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="m6S-hv-2bt" secondAttribute="trailing" constant="20" id="7Pw-qK-zJ4"/>
                             <constraint firstItem="DGv-BR-Kvn" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="9yW-gK-fQ8"/>
+                            <constraint firstItem="kSh-Tr-ur6" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="F4e-UP-oSC"/>
                             <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="DGv-BR-Kvn" secondAttribute="trailing" constant="20" id="Nbk-fU-P7n"/>
                             <constraint firstItem="yWp-2Q-EO2" firstAttribute="leading" secondItem="gra-S4-l0k" secondAttribute="leading" constant="20" id="XbV-gS-Uge"/>
                             <constraint firstItem="gra-S4-l0k" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m6S-hv-2bt" secondAttribute="bottom" constant="20" id="YcR-z6-TwR"/>
+                            <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="kSh-Tr-ur6" secondAttribute="trailing" constant="20" id="ZSd-fx-dH6"/>
                             <constraint firstItem="gra-S4-l0k" firstAttribute="trailing" secondItem="yWp-2Q-EO2" secondAttribute="trailing" constant="20" id="a0H-rD-5bK"/>
                             <constraint firstItem="yWp-2Q-EO2" firstAttribute="top" secondItem="DGv-BR-Kvn" secondAttribute="bottom" constant="20" id="b3S-Jr-Xj3"/>
                             <constraint firstItem="m6S-hv-2bt" firstAttribute="top" secondItem="gra-S4-l0k" secondAttribute="top" constant="20" id="gm7-Ed-BOD"/>
                             <constraint firstItem="DGv-BR-Kvn" firstAttribute="top" secondItem="m6S-hv-2bt" secondAttribute="bottom" constant="20" id="haZ-w3-ykd"/>
+                            <constraint firstItem="kSh-Tr-ur6" firstAttribute="top" secondItem="yWp-2Q-EO2" secondAttribute="bottom" constant="20" id="qcy-BX-fR9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zai-9O-WB7"/>
                     <connections>
                         <outlet property="datePicker" destination="do0-eD-oyF" id="OW2-3k-muf"/>
+                        <outlet property="pickerView" destination="yIY-F3-f2t" id="AVA-GH-TWZ"/>
                         <outlet property="titleDatePicker" destination="lIg-qU-70v" id="5Vk-8X-4rJ"/>
+                        <outlet property="titlePickerView" destination="WFS-6c-Wk5" id="deX-yr-Bmq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfb-0c-Nyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

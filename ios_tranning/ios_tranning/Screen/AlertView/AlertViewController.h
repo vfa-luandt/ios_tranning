@@ -9,13 +9,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AlertViewController : UIViewController
+@interface AlertViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleDatePicker;
+
+@property (weak, nonatomic) IBOutlet UILabel *titlePickerView;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 
 @property UIAlertController *showAlertTwoAction, *showAlertAction;
+@property NSArray *pickerData;
 
 @end
 
