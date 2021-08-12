@@ -1,17 +1,17 @@
 //
-//  UISwitchViewController.m
+//  UiSliderViewController.m
 //  ios_tranning
 //
-//  Created by BaoNgo on 8/11/21.
+//  Created by BaoNgo on 8/12/21.
 //
 
-#import "UISwitchViewController.h"
+#import "UiSliderViewController.h"
 
-@interface UISwitchViewController ()
+@interface UiSliderViewController ()
 
 @end
 
-@implementation UISwitchViewController
+@implementation UiSliderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

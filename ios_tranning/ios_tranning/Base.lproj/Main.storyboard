@@ -17,42 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-LC-l9d">
-                                <rect key="frame" x="20" y="108" width="374" height="240"/>
+                                <rect key="frame" x="20" y="108" width="374" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voZ-GO-ZHV">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="bmN-Lg-09Y"/>
                                         </constraints>
-                                        <state key="normal" title="UIAlertView/UISwitch"/>
+                                        <state key="normal" title="UIAlertView/UISwitch/UIPickerView/UIDatePicker "/>
                                         <connections>
                                             <action selector="buttonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIL-nh-qUX"/>
                                             <segue destination="sec-iO-FOw" kind="push" identifier="alertViewSegue" id="14R-0W-6YH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-BP-dp0">
-                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Mhm-sx-IxJ"/>
-                                        </constraints>
-                                        <state key="normal" title="UIPickerView "/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2t-t7-ugY">
-                                        <rect key="frame" x="0.0" y="100" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="rc8-We-Q3K"/>
-                                        </constraints>
-                                        <state key="normal" title="UIDatePicker "/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkR-kz-zHb">
-                                        <rect key="frame" x="0.0" y="150" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="qP8-3T-uqa"/>
                                         </constraints>
                                         <state key="normal" title="UISlider "/>
+                                        <connections>
+                                            <segue destination="I2o-fZ-mBH" kind="push" id="rgc-Hg-csB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPI-Q8-qtu">
-                                        <rect key="frame" x="0.0" y="200" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="100" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="XoW-Jj-hOZ"/>
                                         </constraints>
@@ -76,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="979.71014492753636" y="83.705357142857139"/>
         </scene>
-        <!--Switch View Controller-->
+        <!--Ui Slider View Controller-->
         <scene sceneID="VE5-m5-RjX">
             <objects>
-                <viewController id="I2o-fZ-mBH" customClass="UISwitchViewController" sceneMemberID="viewController">
+                <viewController id="I2o-fZ-mBH" customClass="UiSliderViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bUN-wf-Y7j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

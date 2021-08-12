@@ -122,8 +122,10 @@
 }
 // The data to return for the row and component (column) that's being passed in
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-  self.titlePickerView.text = _pickerData[row];
   return _pickerData[row];
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+  self.titlePickerView.text = _pickerData[row];
 }
 
 /*
