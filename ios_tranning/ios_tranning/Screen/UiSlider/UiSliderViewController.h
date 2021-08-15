@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UILabel *labelItemSlider;
 
+@property (weak, nonatomic) IBOutlet UIView *viewSlider;
+
+@property UISlider *slider;
+@property NSArray *numbers;
+
 @end
 
 NS_ASSUME_NONNULL_END

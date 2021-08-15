@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kie-Is-4QD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kie-Is-4QD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -91,8 +91,15 @@
                                     <action selector="actionSlider:" destination="I2o-fZ-mBH" eventType="valueChanged" id="Yml-ZW-K9I"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awX-8N-bpN">
+                                <rect key="frame" x="20" y="189" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="uqD-56-u7t"/>
+                                </constraints>
+                            </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-8S-tIz">
-                                <rect key="frame" x="97" y="223" width="131" height="31"/>
+                                <rect key="frame" x="97" y="525" width="131" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
@@ -103,18 +110,22 @@
                         <viewLayoutGuide key="safeArea" id="aLd-Ta-7gT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="awX-8N-bpN" firstAttribute="top" secondItem="CxI-kn-9Qa" secondAttribute="bottom" constant="20" id="7is-Iq-Ow5"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="top" secondItem="X2l-eH-iL7" secondAttribute="bottom" constant="10" id="JZM-Mg-I11"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="CxI-kn-9Qa" secondAttribute="trailing" constant="20" id="SqZ-R6-bay"/>
+                            <constraint firstItem="awX-8N-bpN" firstAttribute="leading" secondItem="bUN-wf-Y7j" secondAttribute="leading" constant="20" id="Wzv-0t-QnG"/>
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="top" secondItem="aLd-Ta-7gT" secondAttribute="top" constant="20" id="YWA-Sl-Xfq"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="bC2-YM-uRb"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="X2l-eH-iL7" secondAttribute="trailing" constant="20" id="bRJ-6p-ub0"/>
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="pCV-du-mih"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="awX-8N-bpN" secondAttribute="trailing" constant="20" id="rXC-L6-SYT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AZj-ap-dFn"/>
                     <connections>
                         <outlet property="labelItemSlider" destination="CxI-kn-9Qa" id="Dth-qJ-Oxn"/>
                         <outlet property="sliderItem" destination="X2l-eH-iL7" id="kI0-WG-1lh"/>
+                        <outlet property="viewSlider" destination="awX-8N-bpN" id="zbe-Pc-BRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wz1-lN-ZwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
