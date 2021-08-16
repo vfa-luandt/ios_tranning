@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		796F28FA26CA5DC0002D4F6F /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28F826CA5DC0002D4F6F /* ActivityViewController.m */; };
 		C3717EBB26C52F810046B654 /* UiSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3717EB926C52F810046B654 /* UiSliderViewController.m */; };
 		C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5726C38FF20091B031 /* AppDelegate.m */; };
 		C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5A26C38FF20091B031 /* SceneDelegate.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		796F28F726CA5DC0002D4F6F /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		796F28F826CA5DC0002D4F6F /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		C3717EB826C52F810046B654 /* UiSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiSliderViewController.h; sourceTree = "<group>"; };
 		C3717EB926C52F810046B654 /* UiSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiSliderViewController.m; sourceTree = "<group>"; };
 		C3B38D5326C38FF20091B031 /* ios_tranning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_tranning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		796F28F226CA5D54002D4F6F /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				796F28F726CA5DC0002D4F6F /* ActivityViewController.h */,
+				796F28F826CA5DC0002D4F6F /* ActivityViewController.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		C3B38D4A26C38FF20091B031 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 		C3B38D9126C3AE3D0091B031 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				796F28F226CA5D54002D4F6F /* Activity */,
 				C3B38DA726C3D4A10091B031 /* UiSlider */,
 				C3B38D9526C3AF170091B031 /* AlertView */,
 			);
@@ -240,6 +253,7 @@
 				TargetAttributes = {
 					C3B38D5226C38FF20091B031 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 					C3B38D7026C38FF90091B031 = {
 						CreatedOnToolsVersion = 12.4;
@@ -310,6 +324,7 @@
 				C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */,
 				C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */,
 				C3B38D9C26C3B2810091B031 /* AlertViewController.m in Sources */,
+				796F28FA26CA5DC0002D4F6F /* ActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2K8VR6ZK2;
 				INFOPLIST_FILE = ios_tranning/Info.plist;
@@ -490,6 +506,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Demo.ios-tranning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -499,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2K8VR6ZK2;
 				INFOPLIST_FILE = ios_tranning/Info.plist;
@@ -508,6 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Demo.ios-tranning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
