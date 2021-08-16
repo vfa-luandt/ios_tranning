@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIView *viewSlider;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedItem;
+
+@property (weak, nonatomic) IBOutlet UIView *viewColor;
+
+
 @property UISlider *slider;
 @property NSArray *numbers;
 

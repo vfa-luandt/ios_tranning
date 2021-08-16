@@ -19,6 +19,17 @@
   _labelItemSlider.text = @(_sliderItem.value).stringValue;
 }
 
+- (IBAction)actionSegmented:(id)sender {
+    if(_segmentedItem.selectedSegmentIndex==0) {
+        _viewColor.backgroundColor=[UIColor greenColor];
+    } else if (_segmentedItem.selectedSegmentIndex==1) {
+        _viewColor.backgroundColor=[UIColor orangeColor];
+    } else {
+        _viewColor.backgroundColor=[UIColor cyanColor];
+    }
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -44,6 +55,11 @@
     [_slider addTarget:self
             action:@selector(valueChanged:)
     forControlEvents:UIControlEventValueChanged];
+    
+    //To change the tint color
+    [[_segmentedItem.subviews objectAtIndex:0] setTintColor:[UIColor cyanColor]];
+    [[_segmentedItem.subviews objectAtIndex:1] setTintColor:[UIColor orangeColor]];
+    [[_segmentedItem.subviews objectAtIndex:2] setTintColor:[UIColor greenColor]];
 }
 
 - (void)valueChanged:(UISlider *)sender {

@@ -98,33 +98,54 @@
                                     <constraint firstAttribute="height" constant="100" id="uqD-56-u7t"/>
                                 </constraints>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-8S-tIz">
-                                <rect key="frame" x="97" y="525" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-gK-f5x">
+                                <rect key="frame" x="20" y="389" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f1v-lv-Cad"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-8S-tIz">
+                                <rect key="frame" x="20" y="319" width="374" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5o9-pR-KVJ"/>
+                                </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Green"/>
+                                    <segment title="Orange"/>
+                                    <segment title="Cyan"/>
                                 </segments>
+                                <connections>
+                                    <action selector="actionSegmented:" destination="I2o-fZ-mBH" eventType="valueChanged" id="hL2-dg-5bI"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aLd-Ta-7gT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="CNF-8S-tIz" secondAttribute="trailing" constant="20" id="43L-iB-5WB"/>
+                            <constraint firstItem="CNF-8S-tIz" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="4rw-oD-6ab"/>
                             <constraint firstItem="awX-8N-bpN" firstAttribute="top" secondItem="CxI-kn-9Qa" secondAttribute="bottom" constant="20" id="7is-Iq-Ow5"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="5HN-gK-f5x" secondAttribute="trailing" constant="20" id="H9Z-sY-ELD"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="top" secondItem="X2l-eH-iL7" secondAttribute="bottom" constant="10" id="JZM-Mg-I11"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="CxI-kn-9Qa" secondAttribute="trailing" constant="20" id="SqZ-R6-bay"/>
                             <constraint firstItem="awX-8N-bpN" firstAttribute="leading" secondItem="bUN-wf-Y7j" secondAttribute="leading" constant="20" id="Wzv-0t-QnG"/>
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="top" secondItem="aLd-Ta-7gT" secondAttribute="top" constant="20" id="YWA-Sl-Xfq"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="bC2-YM-uRb"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="X2l-eH-iL7" secondAttribute="trailing" constant="20" id="bRJ-6p-ub0"/>
+                            <constraint firstItem="CNF-8S-tIz" firstAttribute="top" secondItem="awX-8N-bpN" secondAttribute="bottom" constant="30" id="foN-Px-xTy"/>
+                            <constraint firstItem="5HN-gK-f5x" firstAttribute="top" secondItem="CNF-8S-tIz" secondAttribute="bottom" constant="20" id="lMe-W8-fx6"/>
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="pCV-du-mih"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="awX-8N-bpN" secondAttribute="trailing" constant="20" id="rXC-L6-SYT"/>
+                            <constraint firstItem="5HN-gK-f5x" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="seC-YP-7JX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AZj-ap-dFn"/>
                     <connections>
                         <outlet property="labelItemSlider" destination="CxI-kn-9Qa" id="Dth-qJ-Oxn"/>
+                        <outlet property="segmentedItem" destination="CNF-8S-tIz" id="Zq5-R5-7pf"/>
                         <outlet property="sliderItem" destination="X2l-eH-iL7" id="kI0-WG-1lh"/>
+                        <outlet property="viewColor" destination="5HN-gK-f5x" id="4O3-d6-iF8"/>
                         <outlet property="viewSlider" destination="awX-8N-bpN" id="zbe-Pc-BRX"/>
                     </connections>
                 </viewController>
