@@ -15,6 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonShare;
 
+@property (weak, nonatomic) IBOutlet UILabel *sampleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *customLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageSample;
+
+@property (weak, nonatomic) IBOutlet UITextView *textViewSample;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightTextView;
+
+
 @property UIActivityViewController *activityViewController;
 @property UIAlertController *showAlertAction;
 
