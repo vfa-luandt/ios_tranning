@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageSample;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageWithUrl;
+
 @property (weak, nonatomic) IBOutlet UITextView *textViewSample;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightTextView;

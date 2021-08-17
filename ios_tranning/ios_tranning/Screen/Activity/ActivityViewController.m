@@ -47,14 +47,36 @@
     
     self.sampleLabel.textColor = UIColor.darkGrayColor;
     [self customLabelAttributedText];
+    //    self.customLabel.showhtmlText = "";
+
     
     self.imageSample.image = [UIImage imageNamed: @"img_sample"];
     self.imageSample.contentMode = UIViewContentModeScaleAspectFill;
-
     self.imageSample.clipsToBounds = true;
     self.imageSample.layer.cornerRadius = self.imageSample.frame.size.height/2;
     
-//    self.customLabel.showhtmlText = "";
+    self.imageWithUrl.contentMode = UIViewContentModeScaleAspectFill;
+    self.imageWithUrl.clipsToBounds = true;
+    self.imageWithUrl.layer.cornerRadius = self.imageSample.frame.size.height/2;
+    
+    NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"https://fujifilm-x.com/wp-content/uploads/2019/08/x-t30_sample-images03.jpg"]];
+    self.imageWithUrl.image = [UIImage imageWithData: imageData];
+
+//    NSURL *url = [NSURL URLWithString:@"https://fujifilm-x.com/wp-content/uploads/2019/08/x-t30_sample-images03.jpg"];
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//    UIImage *image = [UIImage imageWithData:data];
+//    [self.imageWithUrl setImage:image];
+    
+//    dispatch_async(dispatch_get_global_queue(0,0), ^{
+//        NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"https://fujifilm-x.com/wp-content/uploads/2019/08/x-t30_sample-images03.jpg"]];
+//        if ( data == nil )
+//            return;
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            // WARNING: is the cell still using the same data by this point??
+//            self.imageWithUrl.image = [UIImage imageWithData: data];
+//        });
+//    });
+    
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField{
