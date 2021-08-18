@@ -45,6 +45,13 @@
     self.textFieldInput.placeholder = @"Enter text to share...";
     self.textFieldInput.delegate = self;
     
+    self.viewContainerTextView.layer.cornerRadius = 5;
+    self.viewContainerTextView.backgroundColor = UIColor.grayColor;
+    self.textViewSample.layer.cornerRadius = 5;
+    self.planholderTextView.text = @"Input text here";
+    self.planholderTextView.textColor = UIColor.grayColor;
+    self.textViewSample.delegate = self;
+
     self.sampleLabel.textColor = UIColor.darkGrayColor;
     [self customLabelAttributedText];
     //    self.customLabel.showhtmlText = "";
@@ -87,6 +94,15 @@
 
 - (void)textFieldDidChangeSelection:(UITextField *)textField {
     self.sampleLabel.text = textField.text;
+}
+
+- (void)textViewDidChangeSelection:(UITextView *)textView {
+    if (textView.text.length > 0) {
+        self.planholderTextView.hidden = YES;
+    } else {
+        self.planholderTextView.hidden = NO;
+    }
+    NSLog(@"%@", textView.text);
 }
 
 - (void) customLabelAttributedText {

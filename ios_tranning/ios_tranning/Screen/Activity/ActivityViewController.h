@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ActivityViewController : UIViewController<UITextFieldDelegate>
+@interface ActivityViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldInput;
 
@@ -23,7 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageWithUrl;
 
+@property (weak, nonatomic) IBOutlet UIView *viewContainerTextView;
+
 @property (weak, nonatomic) IBOutlet UITextView *textViewSample;
+
+@property (weak, nonatomic) IBOutlet UILabel *planholderTextView;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightTextView;
 
