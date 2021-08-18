@@ -60,6 +60,18 @@
     [[_segmentedItem.subviews objectAtIndex:0] setTintColor:[UIColor cyanColor]];
     [[_segmentedItem.subviews objectAtIndex:1] setTintColor:[UIColor orangeColor]];
     [[_segmentedItem.subviews objectAtIndex:2] setTintColor:[UIColor greenColor]];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateProgress) userInfo:nil repeats:YES];;
+
+}
+
+-(void)updateProgress {
+    self.duration += 0.1;
+    self.progressView.progress = (self.duration/5.0); // here 5.0 indicates your required time duration
+    if (self.progressView.progress == 1) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
 }
 
 - (void)valueChanged:(UISlider *)sender {

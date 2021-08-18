@@ -301,6 +301,21 @@
                                     <action selector="actionSegmented:" destination="I2o-fZ-mBH" eventType="valueChanged" id="hL2-dg-5bI"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP1-31-N6I">
+                                <rect key="frame" x="20" y="449" width="374" height="393"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-xb-JdR">
+                                        <rect key="frame" x="20" y="194.5" width="334" height="4"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wmx-xb-JdR" secondAttribute="trailing" constant="20" id="8h0-0G-akY"/>
+                                    <constraint firstItem="wmx-xb-JdR" firstAttribute="centerY" secondItem="gP1-31-N6I" secondAttribute="centerY" id="BlT-SI-1j2"/>
+                                    <constraint firstItem="wmx-xb-JdR" firstAttribute="centerX" secondItem="gP1-31-N6I" secondAttribute="centerX" id="bds-db-pTN"/>
+                                    <constraint firstItem="wmx-xb-JdR" firstAttribute="leading" secondItem="gP1-31-N6I" secondAttribute="leading" constant="20" id="j4Q-qK-jhJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aLd-Ta-7gT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -309,8 +324,10 @@
                             <constraint firstItem="CNF-8S-tIz" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="4rw-oD-6ab"/>
                             <constraint firstItem="awX-8N-bpN" firstAttribute="top" secondItem="CxI-kn-9Qa" secondAttribute="bottom" constant="20" id="7is-Iq-Ow5"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="5HN-gK-f5x" secondAttribute="trailing" constant="20" id="H9Z-sY-ELD"/>
+                            <constraint firstItem="gP1-31-N6I" firstAttribute="top" secondItem="5HN-gK-f5x" secondAttribute="bottom" constant="20" id="Iil-Md-0Cf"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="top" secondItem="X2l-eH-iL7" secondAttribute="bottom" constant="10" id="JZM-Mg-I11"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="CxI-kn-9Qa" secondAttribute="trailing" constant="20" id="SqZ-R6-bay"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="gP1-31-N6I" secondAttribute="trailing" constant="20" id="TMO-yX-ldU"/>
                             <constraint firstItem="awX-8N-bpN" firstAttribute="leading" secondItem="bUN-wf-Y7j" secondAttribute="leading" constant="20" id="Wzv-0t-QnG"/>
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="top" secondItem="aLd-Ta-7gT" secondAttribute="top" constant="20" id="YWA-Sl-Xfq"/>
                             <constraint firstItem="CxI-kn-9Qa" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="bC2-YM-uRb"/>
@@ -320,14 +337,18 @@
                             <constraint firstItem="X2l-eH-iL7" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="pCV-du-mih"/>
                             <constraint firstItem="aLd-Ta-7gT" firstAttribute="trailing" secondItem="awX-8N-bpN" secondAttribute="trailing" constant="20" id="rXC-L6-SYT"/>
                             <constraint firstItem="5HN-gK-f5x" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="seC-YP-7JX"/>
+                            <constraint firstItem="aLd-Ta-7gT" firstAttribute="bottom" secondItem="gP1-31-N6I" secondAttribute="bottom" constant="20" id="xI3-7V-6OY"/>
+                            <constraint firstItem="gP1-31-N6I" firstAttribute="leading" secondItem="aLd-Ta-7gT" secondAttribute="leading" constant="20" id="xoI-0s-6Xx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AZj-ap-dFn"/>
                     <connections>
                         <outlet property="labelItemSlider" destination="CxI-kn-9Qa" id="Dth-qJ-Oxn"/>
+                        <outlet property="progressView" destination="wmx-xb-JdR" id="Itr-EB-5Xv"/>
                         <outlet property="segmentedItem" destination="CNF-8S-tIz" id="Zq5-R5-7pf"/>
                         <outlet property="sliderItem" destination="X2l-eH-iL7" id="kI0-WG-1lh"/>
                         <outlet property="viewColor" destination="5HN-gK-f5x" id="4O3-d6-iF8"/>
+                        <outlet property="viewContainer" destination="gP1-31-N6I" id="JuU-gD-oOJ"/>
                         <outlet property="viewSlider" destination="awX-8N-bpN" id="zbe-Pc-BRX"/>
                     </connections>
                 </viewController>

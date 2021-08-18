@@ -53,7 +53,9 @@
     self.textViewSample.delegate = self;
 
     self.sampleLabel.textColor = UIColor.darkGrayColor;
-    [self customLabelAttributedText];
+//    [self customLabelAttributedText];
+    self.customLabel.backgroundColor = [UIColor clearColor];
+    self.customLabel.attributedText = [self attributedText];
     //    self.customLabel.showhtmlText = "";
 
     
@@ -145,6 +147,40 @@
     [showAlertAction addAction:okButton];
 }
 
+
+- (NSAttributedString *) attributedText{
+    NSString *string = @"custom UILabel";
+    NSMutableAttributedString *result = [[NSMutableAttributedString alloc]
+                                         initWithString:string];
+
+    NSDictionary *attributesForFirstWord = @{
+                     NSFontAttributeName : [UIFont boldSystemFontOfSize:30.0f],
+                     NSForegroundColorAttributeName : [UIColor redColor],
+                     NSBackgroundColorAttributeName : [UIColor clearColor]
+                     };
+
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor darkGrayColor];
+    shadow.shadowOffset = CGSizeMake(4.0f, 4.0f);
+
+    NSDictionary *attributesForSecondWord = @{
+                      NSFontAttributeName : [UIFont boldSystemFontOfSize:20.0f],
+                      NSForegroundColorAttributeName : [UIColor whiteColor],
+                      NSBackgroundColorAttributeName : [UIColor clearColor],
+                      NSShadowAttributeName : shadow
+                      };
+
+    /* Find the string "iOS" in the whole string and sets its attribute */
+    [result setAttributes:attributesForFirstWord
+                    range:[string rangeOfString:@"custom"]];
+
+    /* Do the same thing for the string "SDK" */
+    [result setAttributes:attributesForSecondWord
+                    range:[string rangeOfString:@"UILabel"]];
+
+    return [[NSAttributedString alloc] initWithAttributedString:result];
+
+}
 /*
 #pragma mark - Navigation
 

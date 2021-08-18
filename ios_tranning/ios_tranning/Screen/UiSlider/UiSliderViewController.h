@@ -21,6 +21,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIView *viewColor;
 
+@property (weak, nonatomic) IBOutlet UIView *viewContainer;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+
+@property (nonatomic, strong) NSTimer *progressTimer;
+@property (nonatomic, assign) CGFloat progress;
+
+@property (nonatomic, strong) NSTimer * timer;
+@property float duration;
 
 @property UISlider *slider;
 @property NSArray *numbers;
