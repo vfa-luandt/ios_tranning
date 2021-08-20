@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomUITableViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,10 @@
 - (IBAction)buttonSwitch:(id)sender {
   printf("action Switch");
 
+}
+- (IBAction)actionUITable:(id)sender {
+    CustomUITableViewController *view = [[CustomUITableViewController alloc]initWithNibName:@"CustomUITableViewController" bundle:nil];
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 

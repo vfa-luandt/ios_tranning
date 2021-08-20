@@ -6,7 +6,7 @@
 //
 
 #import "ActivityViewController.h"
-#import "UILabel+Extension.h"
+//#import "UILabel+Extension.h"
 
 @interface ActivityViewController ()
 
