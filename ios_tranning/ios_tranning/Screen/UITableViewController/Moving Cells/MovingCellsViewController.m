@@ -36,6 +36,9 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    NSLog(@"Sent data: %i", self.value);
+
 }
 
 - (NSMutableArray *) newSectionWithIndex:(NSUInteger)paramIndex cellCount:(NSUInteger)paramCellCount{

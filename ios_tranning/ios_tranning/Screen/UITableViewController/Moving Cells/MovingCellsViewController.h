@@ -17,6 +17,7 @@ static NSString *CellId = @"CellId";
 
 @property (nonatomic, strong) NSMutableArray *arrayOfSections;
 
+@property (nonatomic, assign) int value;
 
 @end
 

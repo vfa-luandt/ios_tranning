@@ -45,6 +45,7 @@
 
 - (IBAction)movingCell:(id)sender {
     MovingCellsViewController *view = [[MovingCellsViewController alloc]initWithNibName:@"MovingCellsViewController" bundle:nil];
+    view.value = 5;
     [self.navigationController pushViewController:view animated:YES];
 }
 
