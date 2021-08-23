@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovingCellsViewController">
+            <connections>
+                <outlet property="tableView" destination="rqE-Wr-VW6" id="iFy-Nr-aCh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HW0-Nq-hwq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-xp-zmW">
+                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
+                            <state key="normal" title="moveS1ToS3"/>
+                            <connections>
+                                <action selector="moveS1ToS3:" destination="-1" eventType="touchUpInside" id="06I-nw-JOQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9k-Dl-2XF">
+                            <rect key="frame" x="144.5" y="0.0" width="125" height="50"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="moveCell1InS1ToCell2InS1:" destination="-1" eventType="touchUpInside" id="4L3-1w-0Qe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev8-7k-LoQ">
+                            <rect key="frame" x="289.5" y="0.0" width="124.5" height="50"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="moveCell2InS1ToCell1InS2:" destination="-1" eventType="touchUpInside" id="NGQ-54-MHC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="rYF-bp-mre"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-Wr-VW6">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HW0-Nq-hwq" secondAttribute="trailing" id="MDZ-XD-rIL"/>
+                <constraint firstItem="rqE-Wr-VW6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NsQ-5z-y0Z"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rqE-Wr-VW6" secondAttribute="bottom" id="bUy-gt-5Us"/>
+                <constraint firstItem="HW0-Nq-hwq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hzj-ms-crt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rqE-Wr-VW6" secondAttribute="trailing" id="oxn-xj-eaG"/>
+                <constraint firstItem="HW0-Nq-hwq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="qSx-a2-0Mn"/>
+                <constraint firstItem="rqE-Wr-VW6" firstAttribute="top" secondItem="HW0-Nq-hwq" secondAttribute="bottom" id="vkc-42-HmI"/>
+            </constraints>
+            <point key="canvasLocation" x="26" y="69"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

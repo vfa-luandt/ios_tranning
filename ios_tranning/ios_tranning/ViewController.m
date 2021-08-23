@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import "CustomUITableViewController.h"
 #import "HeaderTableViewController.h"
+#import "ContextMenusController.h"
+#import "MovingCellsViewController.h"
 
 @interface ViewController ()
 
@@ -33,6 +35,16 @@
 
 - (IBAction)headerTableView:(id)sender {
     HeaderTableViewController *view = [[HeaderTableViewController alloc]initWithNibName:@"HeaderTableViewController" bundle:nil];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
+- (IBAction)contextMenus:(id)sender {
+    ContextMenusController *view = [[ContextMenusController alloc]initWithNibName:@"ContextMenusController" bundle:nil];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
+- (IBAction)movingCell:(id)sender {
+    MovingCellsViewController *view = [[MovingCellsViewController alloc]initWithNibName:@"MovingCellsViewController" bundle:nil];
     [self.navigationController pushViewController:view animated:YES];
 }
 

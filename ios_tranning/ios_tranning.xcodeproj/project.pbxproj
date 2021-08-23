@@ -14,6 +14,10 @@
 		B515FC6626CF9885002F7EFF /* CustomUITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */; };
 		B556DC2726D39C2F005B3A7D /* HeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */; };
 		B556DC2826D39C2F005B3A7D /* HeaderTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */; };
+		B556DC2D26D3A0EC005B3A7D /* ContextMenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC2B26D3A0EC005B3A7D /* ContextMenusController.m */; };
+		B556DC2E26D3A0EC005B3A7D /* ContextMenusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B556DC2C26D3A0EC005B3A7D /* ContextMenusController.xib */; };
+		B556DC3326D3A7D3005B3A7D /* MovingCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC3126D3A7D3005B3A7D /* MovingCellsViewController.m */; };
+		B556DC3426D3A7D3005B3A7D /* MovingCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B556DC3226D3A7D3005B3A7D /* MovingCellsViewController.xib */; };
 		C3717EBB26C52F810046B654 /* UiSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3717EB926C52F810046B654 /* UiSliderViewController.m */; };
 		C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5726C38FF20091B031 /* AppDelegate.m */; };
 		C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5A26C38FF20091B031 /* SceneDelegate.m */; };
@@ -58,6 +62,12 @@
 		B556DC2426D39C2F005B3A7D /* HeaderTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewController.h; sourceTree = "<group>"; };
 		B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewController.m; sourceTree = "<group>"; };
 		B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewController.xib; sourceTree = "<group>"; };
+		B556DC2A26D3A0EC005B3A7D /* ContextMenusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextMenusController.h; sourceTree = "<group>"; };
+		B556DC2B26D3A0EC005B3A7D /* ContextMenusController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContextMenusController.m; sourceTree = "<group>"; };
+		B556DC2C26D3A0EC005B3A7D /* ContextMenusController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextMenusController.xib; sourceTree = "<group>"; };
+		B556DC3026D3A7D3005B3A7D /* MovingCellsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovingCellsViewController.h; sourceTree = "<group>"; };
+		B556DC3126D3A7D3005B3A7D /* MovingCellsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovingCellsViewController.m; sourceTree = "<group>"; };
+		B556DC3226D3A7D3005B3A7D /* MovingCellsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovingCellsViewController.xib; sourceTree = "<group>"; };
 		C3717EB826C52F810046B654 /* UiSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiSliderViewController.h; sourceTree = "<group>"; };
 		C3717EB926C52F810046B654 /* UiSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiSliderViewController.m; sourceTree = "<group>"; };
 		C3B38D5326C38FF20091B031 /* ios_tranning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_tranning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +148,8 @@
 		B515FC6126CF984B002F7EFF /* UITableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B556DC2F26D3A7C2005B3A7D /* Moving Cells */,
+				B556DC2926D3A0AB005B3A7D /* Context Menus */,
 				B556DC2326D39C01005B3A7D /* HeadersTableView */,
 				B515FC6226CF9885002F7EFF /* CustomUITableViewController.h */,
 				B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */,
@@ -154,6 +166,26 @@
 				B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */,
 			);
 			path = HeadersTableView;
+			sourceTree = "<group>";
+		};
+		B556DC2926D3A0AB005B3A7D /* Context Menus */ = {
+			isa = PBXGroup;
+			children = (
+				B556DC2A26D3A0EC005B3A7D /* ContextMenusController.h */,
+				B556DC2B26D3A0EC005B3A7D /* ContextMenusController.m */,
+				B556DC2C26D3A0EC005B3A7D /* ContextMenusController.xib */,
+			);
+			path = "Context Menus";
+			sourceTree = "<group>";
+		};
+		B556DC2F26D3A7C2005B3A7D /* Moving Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B556DC3026D3A7D3005B3A7D /* MovingCellsViewController.h */,
+				B556DC3126D3A7D3005B3A7D /* MovingCellsViewController.m */,
+				B556DC3226D3A7D3005B3A7D /* MovingCellsViewController.xib */,
+			);
+			path = "Moving Cells";
 			sourceTree = "<group>";
 		};
 		C3B38D4A26C38FF20091B031 = {
@@ -350,7 +382,9 @@
 			files = (
 				B556DC2826D39C2F005B3A7D /* HeaderTableViewController.xib in Resources */,
 				B515FC6626CF9885002F7EFF /* CustomUITableViewController.xib in Resources */,
+				B556DC2E26D3A0EC005B3A7D /* ContextMenusController.xib in Resources */,
 				C3B38D6926C38FF90091B031 /* LaunchScreen.storyboard in Resources */,
+				B556DC3426D3A7D3005B3A7D /* MovingCellsViewController.xib in Resources */,
 				C3B38D6626C38FF90091B031 /* Assets.xcassets in Resources */,
 				C3B38D6126C38FF20091B031 /* Main.storyboard in Resources */,
 			);
@@ -377,6 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B556DC3326D3A7D3005B3A7D /* MovingCellsViewController.m in Sources */,
+				B556DC2D26D3A0EC005B3A7D /* ContextMenusController.m in Sources */,
 				79643B8826CBBF30005C21D9 /* UILabel+Extension.m in Sources */,
 				C3B38D6C26C38FF90091B031 /* main.m in Sources */,
 				C3717EBB26C52F810046B654 /* UiSliderViewController.m in Sources */,
