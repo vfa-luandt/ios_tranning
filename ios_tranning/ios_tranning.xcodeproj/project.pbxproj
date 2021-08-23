@@ -12,6 +12,8 @@
 		796F28FA26CA5DC0002D4F6F /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28F826CA5DC0002D4F6F /* ActivityViewController.m */; };
 		B515FC6526CF9885002F7EFF /* CustomUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */; };
 		B515FC6626CF9885002F7EFF /* CustomUITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */; };
+		B556DC2726D39C2F005B3A7D /* HeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */; };
+		B556DC2826D39C2F005B3A7D /* HeaderTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */; };
 		C3717EBB26C52F810046B654 /* UiSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3717EB926C52F810046B654 /* UiSliderViewController.m */; };
 		C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5726C38FF20091B031 /* AppDelegate.m */; };
 		C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B38D5A26C38FF20091B031 /* SceneDelegate.m */; };
@@ -53,6 +55,9 @@
 		B515FC6226CF9885002F7EFF /* CustomUITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewController.h; sourceTree = "<group>"; };
 		B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewController.m; sourceTree = "<group>"; };
 		B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomUITableViewController.xib; sourceTree = "<group>"; };
+		B556DC2426D39C2F005B3A7D /* HeaderTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewController.h; sourceTree = "<group>"; };
+		B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewController.m; sourceTree = "<group>"; };
+		B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewController.xib; sourceTree = "<group>"; };
 		C3717EB826C52F810046B654 /* UiSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiSliderViewController.h; sourceTree = "<group>"; };
 		C3717EB926C52F810046B654 /* UiSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiSliderViewController.m; sourceTree = "<group>"; };
 		C3B38D5326C38FF20091B031 /* ios_tranning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_tranning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,11 +138,22 @@
 		B515FC6126CF984B002F7EFF /* UITableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B556DC2326D39C01005B3A7D /* HeadersTableView */,
 				B515FC6226CF9885002F7EFF /* CustomUITableViewController.h */,
 				B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */,
 				B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */,
 			);
 			path = UITableViewController;
+			sourceTree = "<group>";
+		};
+		B556DC2326D39C01005B3A7D /* HeadersTableView */ = {
+			isa = PBXGroup;
+			children = (
+				B556DC2426D39C2F005B3A7D /* HeaderTableViewController.h */,
+				B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */,
+				B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */,
+			);
+			path = HeadersTableView;
 			sourceTree = "<group>";
 		};
 		C3B38D4A26C38FF20091B031 = {
@@ -332,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B556DC2826D39C2F005B3A7D /* HeaderTableViewController.xib in Resources */,
 				B515FC6626CF9885002F7EFF /* CustomUITableViewController.xib in Resources */,
 				C3B38D6926C38FF90091B031 /* LaunchScreen.storyboard in Resources */,
 				C3B38D6626C38FF90091B031 /* Assets.xcassets in Resources */,
@@ -366,6 +383,7 @@
 				796C818026CCECDB004BDDED /* UIWebViewController.m in Sources */,
 				C3B38D6426C38FF20091B031 /* ios_tranning.xcdatamodeld in Sources */,
 				C3B38D5E26C38FF20091B031 /* ViewController.m in Sources */,
+				B556DC2726D39C2F005B3A7D /* HeaderTableViewController.m in Sources */,
 				C3B38D5826C38FF20091B031 /* AppDelegate.m in Sources */,
 				B515FC6526CF9885002F7EFF /* CustomUITableViewController.m in Sources */,
 				C3B38D5B26C38FF20091B031 /* SceneDelegate.m in Sources */,

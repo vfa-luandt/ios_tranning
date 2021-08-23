@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "CustomUITableViewController.h"
+#import "HeaderTableViewController.h"
 
 @interface ViewController ()
 
@@ -30,6 +31,10 @@
     [self.navigationController pushViewController:view animated:YES];
 }
 
+- (IBAction)headerTableView:(id)sender {
+    HeaderTableViewController *view = [[HeaderTableViewController alloc]initWithNibName:@"HeaderTableViewController" bundle:nil];
+    [self.navigationController pushViewController:view animated:YES];
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];
