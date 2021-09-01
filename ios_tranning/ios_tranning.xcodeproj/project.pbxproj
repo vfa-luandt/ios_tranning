@@ -12,6 +12,7 @@
 		796F28FA26CA5DC0002D4F6F /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28F826CA5DC0002D4F6F /* ActivityViewController.m */; };
 		B515FC6526CF9885002F7EFF /* CustomUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */; };
 		B515FC6626CF9885002F7EFF /* CustomUITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */; };
+		B523662F26DE25280003C45E /* TranningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B523662D26DE25270003C45E /* TranningViewController.m */; };
 		B556DC2726D39C2F005B3A7D /* HeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */; };
 		B556DC2826D39C2F005B3A7D /* HeaderTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */; };
 		B556DC2D26D3A0EC005B3A7D /* ContextMenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556DC2B26D3A0EC005B3A7D /* ContextMenusController.m */; };
@@ -59,6 +60,8 @@
 		B515FC6226CF9885002F7EFF /* CustomUITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUITableViewController.h; sourceTree = "<group>"; };
 		B515FC6326CF9885002F7EFF /* CustomUITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUITableViewController.m; sourceTree = "<group>"; };
 		B515FC6426CF9885002F7EFF /* CustomUITableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomUITableViewController.xib; sourceTree = "<group>"; };
+		B523662C26DE25270003C45E /* TranningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranningViewController.h; sourceTree = "<group>"; };
+		B523662D26DE25270003C45E /* TranningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranningViewController.m; sourceTree = "<group>"; };
 		B556DC2426D39C2F005B3A7D /* HeaderTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewController.h; sourceTree = "<group>"; };
 		B556DC2526D39C2F005B3A7D /* HeaderTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewController.m; sourceTree = "<group>"; };
 		B556DC2626D39C2F005B3A7D /* HeaderTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +161,15 @@
 			path = UITableViewController;
 			sourceTree = "<group>";
 		};
+		B523662B26DE24E60003C45E /* Tranning */ = {
+			isa = PBXGroup;
+			children = (
+				B523662C26DE25270003C45E /* TranningViewController.h */,
+				B523662D26DE25270003C45E /* TranningViewController.m */,
+			);
+			path = Tranning;
+			sourceTree = "<group>";
+		};
 		B556DC2326D39C01005B3A7D /* HeadersTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +262,7 @@
 		C3B38D9126C3AE3D0091B031 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B523662B26DE24E60003C45E /* Tranning */,
 				B515FC6126CF984B002F7EFF /* UITableViewController */,
 				796C817C26CCECC1004BDDED /* UIWebView */,
 				796F28F226CA5D54002D4F6F /* Activity */,
@@ -412,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B556DC3326D3A7D3005B3A7D /* MovingCellsViewController.m in Sources */,
+				B523662F26DE25280003C45E /* TranningViewController.m in Sources */,
 				B556DC2D26D3A0EC005B3A7D /* ContextMenusController.m in Sources */,
 				79643B8826CBBF30005C21D9 /* UILabel+Extension.m in Sources */,
 				C3B38D6C26C38FF90091B031 /* main.m in Sources */,
